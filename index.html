@@ -1,11 +1,23 @@
-<html>
+<html ng-app="app">
 <head>
   <meta charset="UTF-8">
   <title>Angular - Notes App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>Hello this is a simple Angular sample.</h1>
+
+  <!-- Controller -->
+  <div ng-controller="NotesCtrl">
+    
+    <!-- loop -->
+    <ul ng-repeat="note in notes">
+      <li>{{note}}
+    </ul>
+  </div>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
