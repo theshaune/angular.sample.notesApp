@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc module
 
@@ -7,7 +5,8 @@
  * @description Simple notes app.
  */
 (function () {
-
+  'use strict';
+  
   /* Angular Module */
   var app = angular.module('app',[]);
 
