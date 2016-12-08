@@ -1,0 +1,11 @@
+{
+  "name": "angular.notes-app",
+  "version": "1.0.0",
+  "description": "A simple notes app to explore the functionality of Angular JS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["angular", "js"],
+  "author": "Shaune West",
+  "license": "MIT"
+}
