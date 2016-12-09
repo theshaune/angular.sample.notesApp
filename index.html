@@ -11,8 +11,10 @@
   <div ng-controller="NotesController as notes">
 
     <!-- loop -->
-    <ul ng-repeat="note in notes.notes track by $index">
-      <li>{{note}}
+    <ul ng-repeat="note in notes.notes">
+      <li>
+        <span ng-click="notes.delNote($index)">[×]</span> 
+        {{note.title}}
     </ul>
     <input type="text" ng-model="newNote">
     <button ng-click="notes.addNote(newNote)">Add {{newNote}}</button>
