@@ -8,12 +8,14 @@
   <h1>Hello this is a simple Angular sample.</h1>
 
   <!-- Controller -->
-  <div ng-controller="NotesCtrl as notes">
+  <div ng-controller="NotesController as notes">
 
     <!-- loop -->
-    <ul ng-repeat="note in notes.notes">
+    <ul ng-repeat="note in notes.notes track by $index">
       <li>{{note}}
     </ul>
+    <input type="text" ng-model="newNote">
+    <button ng-click="notes.addNote(newNote)">Add {{newNote}}</button>
   </div>
   
   <!-- Scripts -->

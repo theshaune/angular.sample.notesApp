@@ -14,10 +14,10 @@
    * @ngdoc controller
    * @name NotesCtrl
    */
-  app.controller('NotesCtrl', NotesCtrl);
+  app.controller('NotesController', NotesController);
 
   /* Notes Controller function */
-  function NotesCtrl() {
+  function NotesController() {
 
     /**
      * Use this convention instead of $scope
@@ -30,6 +30,14 @@
       'three',
       'four'
       ];
+
+    /**
+     * @name Add note
+     * @description Add a note to our notes 
+     */
+    this.addNote = function(note){
+      this.notes.push(note);
+    }
   };
 
 })();
