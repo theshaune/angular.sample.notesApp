@@ -17,12 +17,13 @@
         {{note.title}}
     </ul>
 
+    <!-- form -->
     <form ng-submit="notes.addNote()">
 
       <!-- Input -->
       <div class="form-group">
         <label for="newNote">Note</label>
-        <input ng-model="newNote" id="newNote" type="text" class="form-control">
+        <input ng-model="newNote" id="newNote" type="text" class="form-control" required>
         <small class="form-text text-muted">A small note to help you remember :)</small>
       </div>
 
