@@ -8,10 +8,10 @@
   <h1>Hello this is a simple Angular sample.</h1>
 
   <!-- Controller -->
-  <div ng-controller="NotesCtrl">
-    
+  <div ng-controller="NotesCtrl as notes">
+
     <!-- loop -->
-    <ul ng-repeat="note in notes">
+    <ul ng-repeat="note in notes.notes">
       <li>{{note}}
     </ul>
   </div>
