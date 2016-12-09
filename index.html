@@ -17,18 +17,21 @@
         {{note.title}}
     </ul>
 
-    <!-- Input -->
-    <div class="form-group">
-      <label for="newNote">Note</label>
-      <input ng-model="newNote" id="newNote" type="text" class="form-control">
-      <small class="form-text text-muted">A small note to help you remember :)</small>
-    </div>
+    <form ng-submit="notes.addNote()">
 
-    <!-- Submit button -->
-    <button ng-click="notes.addNote(newNote)" class="btn btn-primary">Add {{newNote}}</button>
+      <!-- Input -->
+      <div class="form-group">
+        <label for="newNote">Note</label>
+        <input ng-model="newNote" id="newNote" type="text" class="form-control">
+        <small class="form-text text-muted">A small note to help you remember :)</small>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary">Add {{newNote}}</button>
+    </form>
     
   </div>
-  
+
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
   <script src="app.js"></script>
