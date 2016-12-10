@@ -7,7 +7,7 @@
 <body>
   
   <!-- Controller -->
-  <div class="container" ng-controller="NotesController as notes">
+  <div class="container" ng-controller="Notes as notes">
     <h1>Hello this is a simple Angular sample.</h1>
     
     <!-- loop -->
@@ -30,11 +30,18 @@
       <!-- Submit button -->
       <button type="submit" class="btn btn-primary">Add {{newNote}}</button>
     </form>
-    
   </div>
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
   <script src="app.js"></script>
+
+  <!-- Core Module -->
+  <script src="/app/core/core.module.js"></script>
+  <script src="/app/core/dataservice.js"></script>
+  
+  <!-- Notes Module -->
+  <script src="/app/notes/notes.module.js"></script>
+  <script src="/app/notes/notes.js"></script>
 </body>
 </html>
