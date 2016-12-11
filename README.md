@@ -25,3 +25,4 @@ browser-sync start --server --port 3001 --files="./*"
 ## Useful Reading Material
 
 - [Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+- [Prototype based Angular Controller Example](https://docs.angularjs.org/api/ng/directive/ngController#example)
