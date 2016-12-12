@@ -5,11 +5,10 @@
     .module('app.notes')
     .controller('Notes', Notes);
 
-  Notes.$inject = ['$scope', 'dataservice'];
+  Notes.$inject = ['dataservice'];
 
-  function Notes($scope, dataservice) {
+  function Notes(dataservice) {
     
-    this.$scope = $scope;
     this.notes  = [];
     this.dataservice  = dataservice;
     
@@ -23,12 +22,11 @@
   };
 
   Notes.prototype.addNote = function() {
-    if (!this.$scope.newNote)
+    if (!this.newNote)
       return;
 
-    return this.dataservice.addNote({title: this.$scope.newNote}).then((data) => {
+    return this.dataservice.addNote({title: this.newNote}).then((data) => {
       this.notes = data;
-      this.$scope.newNote = '';
     })
   };
   
