@@ -15,13 +15,13 @@
     this.getNotes();
   };
 
-  Notes.prototype.getNotes = () => {
+  Notes.prototype.getNotes = function() {
     return this.dataservice.getNotes().then((data) => {
       this.notes = data;
     });
   };
 
-  Notes.prototype.addNote = () => {
+  Notes.prototype.addNote = function() {
     if (!this.newNote)
       return;
 
