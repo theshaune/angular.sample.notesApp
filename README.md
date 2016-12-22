@@ -1,17 +1,16 @@
-# Simple Notes App
+# Simple Angular Notes App
 
 ## Why?
 
-The scope of a notes app is quite small and a great way to introduce and kick the tyres of a framework.
+The scope of a notes app is quite small and a great way to kick the tyres of a framework.
+
 
 ## What is this?
 
-This is a simple notes app to explore the functionality of Googles [AngularJS 1](http://angularjs.org) framework.
+This is a simple notes app to explore the functionality of Googles [Angular 1.5.9](http://angularjs.org) framework. I have built apps in various methods on purpose to learn how angular can handle each method.
+The folder structures are very similar but each app may vary slightly.
+I hope this repository helps others that are interested in getting started with Angular.
 
-Current Features
-
-- Add Note.
-- Delete Note.
 
 ## How to use
 
@@ -19,7 +18,7 @@ I recommend using the fantastic [BrowserSync](https://browsersync.io/) to run th
 
 ```
 npm install -g browser-sync
-browser-sync start --server --port 3001 --files="./*"
+browser-sync start --server --port 3001 --files="./prototypal/*"
 ```
 
 ## Useful Reading Material

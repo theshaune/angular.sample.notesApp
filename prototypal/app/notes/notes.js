@@ -9,19 +9,19 @@
 
   function Notes(dataservice) {
     
-    this.notes  = [];
-    this.dataservice  = dataservice;
+    this.notes = [];
+    this.dataservice = dataservice;
     
     this.getNotes();
   };
 
-  Notes.prototype.getNotes = function() {
+  Notes.prototype.getNotes = () => {
     return this.dataservice.getNotes().then((data) => {
       this.notes = data;
     });
   };
 
-  Notes.prototype.addNote = function() {
+  Notes.prototype.addNote = () => {
     if (!this.newNote)
       return;
 
