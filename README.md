@@ -7,19 +7,23 @@ The scope of a notes app is quite small and a great way to kick the tyres of a f
 
 ## What is this?
 
-This is a simple notes app to explore the functionality of Googles [Angular 1.5.9](http://angularjs.org) framework. I have built apps in various methods on purpose to learn how angular can handle each method.
+This is a simple notes app to explore the functionality of [Angular 1.5.9](http://angularjs.org) framework.
+Each apps has been built with a different programming method and is located in its respective folder, 
+the purpose of this was to learn how angular handles each method.
 The folder structures are very similar but each app may vary slightly.
 I hope this repository helps others that are interested in getting started with Angular.
 
 
 ## How to use
 
-I recommend using the fantastic [BrowserSync](https://browsersync.io/) to run this app.
+I recommend using [BrowserSync](https://browsersync.io/) to run each app.
+Change the pathname to suit which app you would like to run.
 
 ```
 npm install -g browser-sync
 browser-sync start --server --port 3001 --files="./prototypal/*"
 ```
+
 
 ## Useful Reading Material
 
