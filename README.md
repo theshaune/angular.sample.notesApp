@@ -21,7 +21,8 @@ Change the pathname to suit which app you would like to run.
 
 ```
 npm install -g browser-sync
-browser-sync start --server --port 3001 --files="./prototypal/*"
+browser-sync start --server --port 3001 --f="./*" --ss="./prototypal"
+browser-sync start --server --port 3001 --f="./*" --ss="./seperation-of-concerns"
 ```
 
 
