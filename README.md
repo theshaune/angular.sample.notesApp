@@ -1,15 +1,16 @@
-# Simple Angular Notes App
+# Angular Notes App
 
 ## Why?
 
 The scope of a notes app is quite small and a great way to kick the tyres of a framework.
+The purpose of this is to learn experience and learn the Angular framework.
 
 
 ## What is this?
 
 This is a simple notes app to explore the functionality of [Angular 1.5.9](http://angularjs.org) framework.
-Each apps has been built with a different programming method and is located in its respective folder, 
-the purpose of this was to learn how angular handles each method.
+Each apps has been built with a different programming methods and utilizing different Angular features.
+Each app can be found in its respective folder. 
 The folder structures are very similar but each app may vary slightly.
 I hope this repository helps others that are interested in getting started with Angular.
 
@@ -23,6 +24,7 @@ Change the pathname to suit which app you would like to run.
 npm install -g browser-sync
 browser-sync start --server --port 3001 --f="./*" --ss="./prototypal"
 browser-sync start --server --port 3001 --f="./*" --ss="./seperation-of-concerns"
+browser-sync start --server --port 3001 --f="./*" --ss="./compile"
 ```
 
 

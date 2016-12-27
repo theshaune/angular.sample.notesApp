@@ -1,0 +1,5 @@
+<!--<li ng-repeat="note in notes.notes track by $index">-->
+<li class="notes-note">
+  <span ng-click="notes.delNote($index)">[×]</span> 
+  <span ng-transclude class="notes-note-title"></span>
+</li>

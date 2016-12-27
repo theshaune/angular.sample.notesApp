@@ -1,0 +1,44 @@
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular - Notes App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Controller -->
+  <div class="container" ng-controller="Notes as notes">
+    <h1>Hello this is a simple Angular sample.</h1>
+    
+    <!-- loop -->
+    <notes>
+      <note ng-repeat="note in notes.notes track by $index"> {{note.title}} </note>
+    </notes>
+
+    <!-- form -->
+    <form ng-submit="notes.addNote()">
+
+      <!-- Input -->
+      <div class="form-group">
+        <label for="newNote">Note</label>
+        <input ng-model="notes.newNote" id="newNote" type="text" class="form-control" >
+        <small class="form-text text-muted">A small note to help you remember :)</small>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary">Add {{notes.newNote}}</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Core Module -->
+  <script src="/app/core/core.module.js"></script>
+  <script src="/app/core/dataservice.js"></script>
+  
+  <!-- Notes Module -->
+  <script src="/app/notes/notes.module.js"></script>
+  <script src="/app/notes/notes.js"></script>
+</body>
+</html>
